@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 def main():
     # 1. Read the dataset file from the repository
     file_path = 'Grad Program Exit Survey Data 2024.csv'
-    df = pd.read_csv(file_path, encoding='utf-8', encoding_errors='replace', engine='python', on_bad_lines='skip')
+    df = pd.read_csv(file_path)
     # 2. Clean and reshape the data
     # Find all columns related to the course ranking question (Q35)
     q35_cols = [col for col in df.columns if col.startswith('Q35')]
