@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 def main():
     # 1. Read the dataset file from the repository
     file_path = 'Grad Program Exit Survey Data 2024.xlsx'
-    df = pd.read_csv(file_path)
+    df = pd.read_csv(file_path, encoding='cp1252')
 
     # 2. Clean and reshape the data
     # Find all columns related to the course ranking question (Q35)
