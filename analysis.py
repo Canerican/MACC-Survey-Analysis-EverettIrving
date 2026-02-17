@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 def main():
     # 1. Read the dataset file from the repository
-    file_path = 'Grad Program Exit Survey Data 2024.xlsx - MAcc Exit Survey - April 2024_M.csv'
+    file_path = 'Grad Program Exit Survey Data 2024.xlsx'
     df = pd.read_csv(file_path)
 
     # 2. Clean and reshape the data
